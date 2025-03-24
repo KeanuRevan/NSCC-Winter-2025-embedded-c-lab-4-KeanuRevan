@@ -16,19 +16,49 @@ events:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/gcc.exe 
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
       Build flags: 
       Id flags:  
+      
+      The output was:
+      1
+      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
+      Build flags: 
+      Id flags: -c 
       
       The output was:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.exe
+        C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "try_compile-v1"
@@ -39,8 +69,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8fca4"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8fca4"
+      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3kqppn"
+      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3kqppn"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -49,175 +79,94 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8fca4'
+        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3kqppn'
         
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ef3ca
-        [1/2] C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_298c5
+        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
-        Thread model: posix
+        COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14-5/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=x86_64-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+        Thread model: single
         Supported LTO compression algorithms: zlib
-        gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ef3ca.dir/'
-         C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ef3ca.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccTD1IPe.s
-        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_298c5.dir/'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_298c5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccYvtS1w.s
+        GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
+        	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
-        ignoring nonexistent directory "/win/include"
-        ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
-        ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "/mingw/include"
+        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
+        ignoring nonexistent directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/14.2.1/../../../../include"
+        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
+        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
-         C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
-         C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
-         C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/include
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
-        Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ef3ca.dir/'
-         as -v -o CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccTD1IPe.s
-        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
-        COMPILER_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../\x0d
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.'\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe  -v -Wl,-v CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj -o cmTC_ef3ca.exe -Wl,--out-implib,libcmTC_ef3ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Compiler executable checksum: c3ae4274e7df52e7e88f1bdbad8fa7fc
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_298c5.dir/'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccYvtS1w.s
+        GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
+        COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE  -v -Wl,-v CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj -o cmTC_298c5.exe -Wl,--out-implib,libcmTC_298c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_298c5.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE  -v -Wl,-v CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj -o cmTC_298c5.exe -Wl,--out-implib,libcmTC_298c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe
-        COLLECT_LTO_WRAPPER=C:/Program\\ Files\\ (x86)/JetBrains/CLion\\ 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
-        Thread model: posix
+        COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
+        COLLECT_LTO_WRAPPER=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14-5/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=x86_64-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+        Thread model: single
         Supported LTO compression algorithms: zlib
-        gcc version 13.1.0 (GCC) 
-        COMPILER_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3ca.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ef3ca.'
-         C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ef3ca.exe C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_ef3ca.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        collect2 version 13.1.0
-        C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_ef3ca.exe C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_ef3ca.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3ca.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ef3ca.'\x0d
+        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+        COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_298c5.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_298c5.'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2.exe -plugin C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.dll -plugin-opt=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\98adt\\AppData\\Local\\Temp\\ccsFyEYB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -X -o cmTC_298c5.exe C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crti.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtbegin.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crt0.o -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1 -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib -v CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_298c5.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtend.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtn.o
+        collect2 version 14.2.1 20241119
+        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe -plugin C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.dll -plugin-opt=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\98adt\\AppData\\Local\\Temp\\ccsFyEYB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -X -o cmTC_298c5.exe C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crti.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtbegin.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crt0.o -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1 -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib -v CMakeFiles/cmTC_298c5.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_298c5.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtend.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtn.o
+        GNU ld (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
+        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'\x0d
+        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
         
-      exitCode: 0
+      exitCode: 1
   -
-    kind: "message-v1"
+    kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
       - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-          add: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-          add: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-          add: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
-        end of search list found
-        collapse include dir [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        collapse include dir [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/include]
-        collapse include dir [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        collapse include dir [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/x86_64-w64-mingw32/include]
-        implicit include dirs: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/include;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/x86_64-w64-mingw32/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8fca4']
-        ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ef3ca]
-        ignore line: [[1/2] C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ef3ca.dir/']
-        ignore line: [ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ef3ca.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccTD1IPe.s]
-        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
-        ignore line: [ignoring nonexistent directory "/win/include"]
-        ignore line: [ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "/mingw/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        ignore line: [ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-        ignore line: [ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        ignore line: [ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ef3ca.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccTD1IPe.s]
-        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
-        ignore line: [COMPILER_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../\x0d]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.'\x0d]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe  -v -Wl -v CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj -o cmTC_ef3ca.exe -Wl --out-implib libcmTC_ef3ca.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\PROGRA~2\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\gcc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files\\ (x86)/JetBrains/CLion\\ 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COMPILER_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3ca.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ef3ca.']
-        ignore line: [ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ef3ca.exe C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_ef3ca.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [collect2 version 13.1.0]
-        ignore line: [C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_ef3ca.exe C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v CMakeFiles/cmTC_ef3ca.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_ef3ca.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [GNU ld (GNU Binutils) 2.40]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3ca.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ef3ca.'\x0d]
-        ignore line: []
-        ignore line: []
-        linker tool for 'C': C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/ld.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the C compiler's linker: "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.40
+    checks:
+      - "Check for working C compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe"
+    directories:
+      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gz8n9e"
+      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gz8n9e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gz8n9e'
+        
+        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_dd826
+        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_dd826.dir/testCCompiler.c.obj -c C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gz8n9e/testCCompiler.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   CMakeFiles/cmTC_dd826.dir/testCCompiler.c.obj -o cmTC_dd826.exe -Wl,--out-implib,libcmTC_dd826.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_dd826.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   CMakeFiles/cmTC_dd826.dir/testCCompiler.c.obj -o cmTC_dd826.exe -Wl,--out-implib,libcmTC_dd826.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'\x0d
+        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
 ...
