@@ -12,6 +12,7 @@ SECTIONS
 {
 	.text :
 	{
+	    *(.vectors)
 		*(.text)
 	} > rom
 
