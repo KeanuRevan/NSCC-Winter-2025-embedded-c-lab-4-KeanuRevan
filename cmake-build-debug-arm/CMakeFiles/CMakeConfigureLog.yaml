@@ -4,182 +4,18 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:2 (project)"
+      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:15 (project)"
     message: |
-      The system is: Windows - 10.0.26100 - AMD64
+      The target system is: Generic - 1 - ARM
+      The host system is: Windows - 10.0.26100 - AMD64
   -
     kind: "message-v1"
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-exit.o): in function `exit':
-      exit.c:(.text.exit+0x28): undefined reference to `_exit'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-closer.o): in function `_close_r':
-      closer.c:(.text._close_r+0x18): undefined reference to `_close'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-readr.o): in function `_read_r':
-      readr.c:(.text._read_r+0x24): undefined reference to `_read'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-writer.o): in function `_write_r':
-      writer.c:(.text._write_r+0x24): undefined reference to `_write'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
-      collect2.exe: error: ld returned 1 exit status
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags: -c 
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
-      
-      The C compiler identification is GNU, found in:
-        C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4ew730"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4ew730"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4ew730'
-        
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_0b1fe
-        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
-        Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14-5/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=x86_64-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_0b1fe.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_0b1fe.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccyFJsSL.s
-        GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
-        	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
-        ignoring nonexistent directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/14.2.1/../../../../include"
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/include
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
-        End of search list.
-        Compiler executable checksum: c3ae4274e7df52e7e88f1bdbad8fa7fc
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_0b1fe.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccyFJsSL.s
-        GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
-        COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.'\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE  -v -Wl,-v CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj -o cmTC_0b1fe.exe -Wl,--out-implib,libcmTC_0b1fe.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
-        FAILED: cmTC_0b1fe.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE  -v -Wl,-v CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj -o cmTC_0b1fe.exe -Wl,--out-implib,libcmTC_0b1fe.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
-        Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
-        COLLECT_LTO_WRAPPER=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14-5/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=x86_64-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b1fe.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_0b1fe.'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2.exe -plugin C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.dll -plugin-opt=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\98adt\\AppData\\Local\\Temp\\ccyd0dmQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -X -o cmTC_0b1fe.exe C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crti.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtbegin.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crt0.o -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1 -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib -v CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_0b1fe.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtend.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtn.o
-        collect2 version 14.2.1 20241119
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe -plugin C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.dll -plugin-opt=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\98adt\\AppData\\Local\\Temp\\ccyd0dmQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -X -o cmTC_0b1fe.exe C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crti.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtbegin.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crt0.o -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1 -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib -v CMakeFiles/cmTC_0b1fe.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_0b1fe.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtend.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtn.o
-        GNU ld (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'\x0d
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information\x0d
-        collect2.exe: error: ld returned 1 exit status
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Check for working C compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe"
-    directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4pr1x3"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4pr1x3"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4pr1x3'
-        
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_c705d
-        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_c705d.dir/testCCompiler.c.obj -c C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-4pr1x3/testCCompiler.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   CMakeFiles/cmTC_c705d.dir/testCCompiler.c.obj -o cmTC_c705d.exe -Wl,--out-implib,libcmTC_c705d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        FAILED: cmTC_c705d.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   CMakeFiles/cmTC_c705d.dir/testCCompiler.c.obj -o cmTC_c705d.exe -Wl,--out-implib,libcmTC_c705d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'\x0d
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information\x0d
-        collect2.exe: error: ld returned 1 exit status
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 1
-...
-
----
-events:
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
@@ -209,172 +45,7 @@ events:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags: -c 
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
-      
-      The C compiler identification is GNU, found in:
-        C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-i8v8a1"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-i8v8a1"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-i8v8a1'
-        
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_94be9
-        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
-        Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14-5/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=x86_64-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_94be9.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_94be9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccXHxfJa.s
-        GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
-        	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
-        ignoring nonexistent directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/14.2.1/../../../../include"
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
-        ignoring duplicate directory "C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/include
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
-        End of search list.
-        Compiler executable checksum: c3ae4274e7df52e7e88f1bdbad8fa7fc
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_94be9.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccXHxfJa.s
-        GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
-        COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.'\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE  -v -Wl,-v CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj -o cmTC_94be9.exe -Wl,--out-implib,libcmTC_94be9.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
-        FAILED: cmTC_94be9.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE  -v -Wl,-v CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj -o cmTC_94be9.exe -Wl,--out-implib,libcmTC_94be9.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
-        Using built-in specs.
-        COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
-        COLLECT_LTO_WRAPPER=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14-5/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-14-5/build-mingw-arm-none-eabi/host-tools --enable-mingw-wildcard --host=x86_64-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94be9.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_94be9.'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2.exe -plugin C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.dll -plugin-opt=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\98adt\\AppData\\Local\\Temp\\ccTjBnaf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -X -o cmTC_94be9.exe C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crti.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtbegin.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crt0.o -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1 -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib -v CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_94be9.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtend.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtn.o
-        collect2 version 14.2.1 20241119
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe -plugin C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.dll -plugin-opt=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\98adt\\AppData\\Local\\Temp\\ccTjBnaf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -X -o cmTC_94be9.exe C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crti.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtbegin.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crt0.o -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1 -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -LC:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib -v CMakeFiles/cmTC_94be9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_94be9.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtend.o C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/crtn.o
-        GNU ld (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'\x0d
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information\x0d
-        collect2.exe: error: ld returned 1 exit status
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Check for working C compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe"
-    directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-nxjb9u"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-nxjb9u"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-nxjb9u'
-        
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_fbd2b
-        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_fbd2b.dir/testCCompiler.c.obj -c C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-nxjb9u/testCCompiler.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   CMakeFiles/cmTC_fbd2b.dir/testCCompiler.c.obj -o cmTC_fbd2b.exe -Wl,--out-implib,libcmTC_fbd2b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        FAILED: cmTC_fbd2b.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   CMakeFiles/cmTC_fbd2b.dir/testCCompiler.c.obj -o cmTC_fbd2b.exe -Wl,--out-implib,libcmTC_fbd2b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'\x0d
-        C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information\x0d
-        collect2.exe: error: ld returned 1 exit status
-        ninja: build stopped: subcommand failed.
-        
-      exitCode: 1
-...
-
----
-events:
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:12 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-exit.o): in function `exit':
-      exit.c:(.text.exit+0x28): undefined reference to `_exit'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-closer.o): in function `_close_r':
-      closer.c:(.text._close_r+0x18): undefined reference to `_close'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-readr.o): in function `_read_r':
-      readr.c:(.text._read_r+0x24): undefined reference to `_read'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-writer.o): in function `_write_r':
-      writer.c:(.text._write_r+0x24): undefined reference to `_write'
-      C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
-      collect2.exe: error: ld returned 1 exit status
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-gcc.exe 
@@ -396,7 +67,7 @@ events:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
       Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-g++.exe 
@@ -426,7 +97,7 @@ events:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-g++.exe 
@@ -447,7 +118,7 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
       arm-none-eabi-gcc.exe (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119
@@ -460,12 +131,12 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-pn6p94"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-pn6p94"
+      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-t899xq"
+      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-t899xq"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -474,10 +145,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-pn6p94'
+        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-t899xq'
         
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_8d68a
-        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_b129a
+        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE
         Target: arm-none-eabi
@@ -485,8 +156,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8d68a.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8d68a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccpS85nU.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b129a.dir/'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b129a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccPkpd5N.s
         GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -503,13 +174,13 @@ events:
          C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: c3ae4274e7df52e7e88f1bdbad8fa7fc
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8d68a.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccpS85nU.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b129a.dir/'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccPkpd5N.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
         COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.'\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_8d68a.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_8d68a.a  CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_8d68a.a && cd ."
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_b129a.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_b129a.a  CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_b129a.a && cd ."
         
       exitCode: 0
   -
@@ -517,7 +188,7 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -537,15 +208,15 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-pn6p94']
+        ignore line: [Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-t899xq']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_8d68a]
-        ignore line: [[1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_b129a]
+        ignore line: [[1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR19DD~1.EXE]
         ignore line: [Target: arm-none-eabi]
@@ -553,8 +224,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8d68a.dir/']
-        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8d68a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccpS85nU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b129a.dir/']
+        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b129a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccPkpd5N.s]
         ignore line: [GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 9.3-win32 20200320  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -571,8 +242,8 @@ events:
         ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c3ae4274e7df52e7e88f1bdbad8fa7fc]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8d68a.dir/']
-        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccpS85nU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b129a.dir/']
+        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccPkpd5N.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
         ignore line: [COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/]
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/]
@@ -581,8 +252,8 @@ events:
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/]
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.'\x0d]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_8d68a.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_8d68a.a  CMakeFiles/cmTC_8d68a.dir/CMakeCCompilerABI.c.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_8d68a.a && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_b129a.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_b129a.a  CMakeFiles/cmTC_b129a.dir/CMakeCCompilerABI.c.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_b129a.a && cd ."]
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -596,12 +267,12 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-ipozcw"
-      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-ipozcw"
+      source: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-5rfczt"
+      binary: "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-5rfczt"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -611,10 +282,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-ipozcw'
+        Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-5rfczt'
         
-        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_8261b
-        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR10B2~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_380c9
+        [1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR10B2~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR10B2~1.EXE
         Target: arm-none-eabi
@@ -622,8 +293,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8261b.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8261b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccIrDEhk.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_380c9.dir/'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_380c9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\cc5kvZ1d.s
         GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -646,13 +317,13 @@ events:
          C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: f57d57b028b5d08af5eae585a87c5279
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8261b.dir/'
-         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccIrDEhk.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_380c9.dir/'
+         C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\cc5kvZ1d.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
         COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/;C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.'\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_8261b.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_8261b.a  CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_8261b.a && cd ."
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_380c9.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_380c9.a  CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_380c9.a && cd ."
         
       exitCode: 0
   -
@@ -660,7 +331,7 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -686,15 +357,15 @@ events:
     backtrace:
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:12 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-ipozcw']
+        ignore line: [Change Dir: 'C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/CMakeScratch/TryCompile-5rfczt']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_8261b]
-        ignore line: [[1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR10B2~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_380c9]
+        ignore line: [[1/2] C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR10B2~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR10B2~1.EXE]
         ignore line: [Target: arm-none-eabi]
@@ -702,8 +373,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8261b.dir/']
-        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8261b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\ccIrDEhk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_380c9.dir/']
+        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus.exe -quiet -v -iprefix C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi -D__USES_INITFINI__ C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_380c9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o C:\\Users\\98adt\\AppData\\Local\\Temp\\cc5kvZ1d.s]
         ignore line: [GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 9.3-win32 20200320  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -726,8 +397,8 @@ events:
         ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f57d57b028b5d08af5eae585a87c5279]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8261b.dir/']
-        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\ccIrDEhk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_380c9.dir/']
+        ignore line: [ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\98adt\\AppData\\Local\\Temp\\cc5kvZ1d.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
         ignore line: [COMPILER_PATH=C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/arm-none-eabi/14.2.1/]
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../libexec/gcc/]
@@ -736,8 +407,8 @@ events:
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/]
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.'\x0d]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_8261b.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_8261b.a  CMakeFiles/cmTC_8261b.dir/CMakeCXXCompilerABI.cpp.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_8261b.a && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files (x86)\\JetBrains\\CLion 2024.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f libcmTC_380c9.a && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\ARM-NO~2.EXE qc libcmTC_380c9.a  CMakeFiles/cmTC_380c9.dir/CMakeCXXCompilerABI.cpp.obj && C:\\PROGRA~2\\ARMGNU~1\\14EFD8~1.2RE\\bin\\AR17F9~1.EXE libcmTC_380c9.a && cd ."]
         ignore line: []
         ignore line: []
         implicit libs: []

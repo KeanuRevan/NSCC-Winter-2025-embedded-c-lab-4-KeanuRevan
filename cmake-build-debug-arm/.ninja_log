@@ -1,3 +1,6 @@
 # ninja log v6
-7	48	7645706309240299	CMakeFiles/lab4.elf.dir/startup.s.obj	23cab28dc991732e
-2	77	7645706309190139	CMakeFiles/lab4.elf.dir/main.c.obj	f43408d0a03fd2b1
+2	26	7645767373889117	CMakeFiles/lab4.elf.dir/startup.s.obj	b2006fcf18bd15a0
+1	62	7645766552900564	CMakeFiles/lab4.elf.dir/main.c.obj	8e626d355ee39643
+6	31	7645768856725349	CMakeFiles/lab4.elf.dir/startup.s.obj	b2006fcf18bd15a0
+2	64	7645768856675365	CMakeFiles/lab4.elf.dir/main.c.obj	8e626d355ee39643
+64	1862	7645768857302401	lab4.elf	575c6d2254133cbd
