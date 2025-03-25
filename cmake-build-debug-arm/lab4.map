@@ -1,0 +1,100 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x00020000         xr
+ram              0x20000000         0x00008000         !xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/lab4.elf.dir/main.c.obj
+LOAD CMakeFiles/lab4.elf.dir/startup.s.obj
+                0x20008000                        _stack_top = (ORIGIN (ram) + LENGTH (ram))
+
+.text           0x08000000       0xd0
+ *(.vectors)
+ .vectors       0x08000000       0xc0 CMakeFiles/lab4.elf.dir/startup.s.obj
+                0x08000000                _vectors
+ *(.text)
+ .text          0x080000c0        0x4 CMakeFiles/lab4.elf.dir/main.c.obj
+                0x080000c0                main
+ .text          0x080000c4        0xc CMakeFiles/lab4.elf.dir/startup.s.obj
+                0x080000c4                _start
+
+.glue_7         0x080000d0        0x0
+ .glue_7        0x080000d0        0x0 linker stubs
+
+.glue_7t        0x080000d0        0x0
+ .glue_7t       0x080000d0        0x0 linker stubs
+
+.vfp11_veneer   0x080000d0        0x0
+ .vfp11_veneer  0x080000d0        0x0 linker stubs
+
+.v4_bx          0x080000d0        0x0
+ .v4_bx         0x080000d0        0x0 linker stubs
+
+.iplt           0x080000d0        0x0
+ .iplt          0x080000d0        0x0 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.rel.dyn        0x080000d0        0x0
+ .rel.iplt      0x080000d0        0x0 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.data           0x20000000        0x0 load address 0x080000d0
+ *(.data)
+ .data          0x20000000        0x0 CMakeFiles/lab4.elf.dir/main.c.obj
+ .data          0x20000000        0x0 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.igot.plt       0x20000000        0x0 load address 0x080000d0
+ .igot.plt      0x20000000        0x0 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.bss            0x20000000        0x0 load address 0x080000d0
+ *(.bss)
+ .bss           0x20000000        0x0 CMakeFiles/lab4.elf.dir/main.c.obj
+ .bss           0x20000000        0x0 CMakeFiles/lab4.elf.dir/startup.s.obj
+OUTPUT(lab4.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000       0xc2
+ .debug_info    0x00000000       0x91 CMakeFiles/lab4.elf.dir/main.c.obj
+ .debug_info    0x00000091       0x31 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.debug_abbrev   0x00000000       0x6d
+ .debug_abbrev  0x00000000       0x45 CMakeFiles/lab4.elf.dir/main.c.obj
+ .debug_abbrev  0x00000045       0x28 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 CMakeFiles/lab4.elf.dir/main.c.obj
+ .debug_aranges
+                0x00000020       0x20 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.debug_line     0x00000000       0xd2
+ .debug_line    0x00000000       0x86 CMakeFiles/lab4.elf.dir/main.c.obj
+ .debug_line    0x00000086       0x4c CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.debug_str      0x00000000      0x1ff
+ .debug_str     0x00000000      0x1ff CMakeFiles/lab4.elf.dir/main.c.obj
+                                0x1cc (size before relaxing)
+ .debug_str     0x000001ff       0xcf CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 CMakeFiles/lab4.elf.dir/main.c.obj
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x2c CMakeFiles/lab4.elf.dir/main.c.obj
+ .ARM.attributes
+                0x0000002c       0x22 CMakeFiles/lab4.elf.dir/startup.s.obj
+
+.debug_frame    0x00000000       0x20
+ .debug_frame   0x00000000       0x20 CMakeFiles/lab4.elf.dir/main.c.obj
+
+.debug_line_str
+                0x00000000       0xba
+ .debug_line_str
+                0x00000000       0xba CMakeFiles/lab4.elf.dir/startup.s.obj
