@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4
+# Install script for directory: C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,3 +1,3 @@
-C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/lab4.elf.dir
-C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/edit_cache.dir
-C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/CMakeFiles/rebuild_cache.dir
+C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/CMakeFiles/lab5.elf.dir
+C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/CMakeFiles/edit_cache.dir
+C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/CMakeFiles/rebuild_cache.dir

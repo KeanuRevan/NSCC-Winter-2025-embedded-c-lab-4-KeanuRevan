@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: lab4
+# Project: lab5
 # Configurations: Debug
 # =============================================================================
 
@@ -39,53 +39,53 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/
+cmake_ninja_workdir = C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/
 # =============================================================================
-# Object build statements for EXECUTABLE target lab4.elf
+# Object build statements for EXECUTABLE target lab5.elf
 
 
 #############################################
-# Order-only phony target for lab4.elf
+# Order-only phony target for lab5.elf
 
-build cmake_object_order_depends_target_lab4.elf: phony || .
+build cmake_object_order_depends_target_lab5.elf: phony || .
 
-build CMakeFiles/lab4.elf.dir/main.c.obj: C_COMPILER__lab4.2eelf_unscanned_Debug C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/main.c || cmake_object_order_depends_target_lab4.elf
+build CMakeFiles/lab5.elf.dir/main.c.obj: C_COMPILER__lab5.2eelf_unscanned_Debug C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/main.c || cmake_object_order_depends_target_lab5.elf
   DEFINES = -DDEBUG
-  DEP_FILE = CMakeFiles\lab4.elf.dir\main.c.obj.d
+  DEP_FILE = CMakeFiles\lab5.elf.dir\main.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always -mcpu=cortex-m0plus -mthumb -Wall -fomit-frame-pointer -g
-  OBJECT_DIR = CMakeFiles\lab4.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\lab4.elf.dir
+  OBJECT_DIR = CMakeFiles\lab5.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab5.elf.dir
 
-build CMakeFiles/lab4.elf.dir/startup.s.obj: ASM_COMPILER__lab4.2eelf_unscanned_Debug C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/startup.s || cmake_object_order_depends_target_lab4.elf
+build CMakeFiles/lab5.elf.dir/startup.s.obj: ASM_COMPILER__lab5.2eelf_unscanned_Debug C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/startup.s || cmake_object_order_depends_target_lab5.elf
   DEFINES = -DDEBUG
-  DEP_FILE = CMakeFiles\lab4.elf.dir\startup.s.obj.d
+  DEP_FILE = CMakeFiles\lab5.elf.dir\startup.s.obj.d
   FLAGS = -g -mcpu=cortex-m0plus -mthumb -Wall -fomit-frame-pointer -g
-  OBJECT_DIR = CMakeFiles\lab4.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\lab4.elf.dir
+  OBJECT_DIR = CMakeFiles\lab5.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab5.elf.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target lab4.elf
+# Link build statements for EXECUTABLE target lab5.elf
 
 
 #############################################
-# Link the executable lab4.elf
+# Link the executable lab5.elf
 
-build lab4.elf: C_EXECUTABLE_LINKER__lab4.2eelf_Debug CMakeFiles/lab4.elf.dir/main.c.obj CMakeFiles/lab4.elf.dir/startup.s.obj
+build lab5.elf: C_EXECUTABLE_LINKER__lab5.2eelf_Debug CMakeFiles/lab5.elf.dir/main.c.obj CMakeFiles/lab5.elf.dir/startup.s.obj
   FLAGS = -g
-  LINK_FLAGS = -Wl,--print-memory-usage,-Map=C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.map -TC:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/stm32.ld --specs=nosys.specs -nostdlib
-  OBJECT_DIR = CMakeFiles\lab4.elf.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab4\lab4\cmake-build-debug-arm && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "Building C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.hex" && arm-none-eabi-objcopy -Oihex C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.elf C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.hex && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "Building C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.bin" && arm-none-eabi-objcopy -Obinary C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.elf C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.bin && arm-none-eabi-objdump -D C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm/lab4.elf -j.text --disassembler-color=extended"
+  LINK_FLAGS = -Wl,--print-memory-usage,-Map=C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.map -TC:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/stm32.ld --specs=nosys.specs -nostdlib
+  OBJECT_DIR = CMakeFiles\lab5.elf.dir
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab5\lab5\cmake-build-debug-arm && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "Building C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.hex" && arm-none-eabi-objcopy -Oihex C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.elf C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.hex && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "Building C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.bin" && arm-none-eabi-objcopy -Obinary C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.elf C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.bin && arm-none-eabi-objdump -D C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm/lab5.elf -j.text --disassembler-color=extended"
   PRE_LINK = cd .
-  TARGET_FILE = lab4.elf
-  TARGET_PDB = lab4.elf.dbg
+  TARGET_FILE = lab5.elf
+  TARGET_PDB = lab5.elf.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab4\lab4\cmake-build-debug-arm && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab5\lab5\cmake-build-debug-arm && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -96,7 +96,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab4\lab4\cmake-build-debug-arm && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab4\lab4 -BC:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab4\lab4\cmake-build-debug-arm"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab5\lab5\cmake-build-debug-arm && "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab5\lab5 -BC:\Users\98adt\Documents\NSCC_IoT\semester_Jan2025\Embedded_C\Labs\lab5\lab5\cmake-build-debug-arm"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -112,9 +112,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/cmake-build-debug-arm
+# Folder: C:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/cmake-build-debug-arm
 
-build all: phony lab4.elf
+build all: phony lab5.elf
 
 # =============================================================================
 # Built-in targets
@@ -123,14 +123,14 @@ build all: phony lab4.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeASMInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Generic.cmake C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeASMCompiler.cmake CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeASMInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Generic.cmake C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeASMCompiler.cmake CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeASMInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Generic.cmake C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab4/lab4/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeASMCompiler.cmake CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeASMInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files$ (x86)/JetBrains/CLion$ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Generic.cmake C$:/Users/98adt/Documents/NSCC_IoT/semester_Jan2025/Embedded_C/Labs/lab5/lab5/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeASMCompiler.cmake CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################
