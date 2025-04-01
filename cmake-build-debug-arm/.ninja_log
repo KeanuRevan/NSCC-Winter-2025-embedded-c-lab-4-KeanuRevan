@@ -4,3 +4,6 @@
 69	514	7651522049663185	lab5.elf	9bf391637a250d0c
 18	35	7651522049151033	CMakeFiles/lab5.elf.dir/startup.s.obj	f022f2edf84503dd
 14	68	7651522049110983	CMakeFiles/lab5.elf.dir/main.c.obj	60a8575e4b67da85
+2	80	7651708462497944	CMakeFiles/lab5.elf.dir/main.c.obj	60a8575e4b67da85
+1	18	7651709278889514	CMakeFiles/lab5.elf.dir/startup.s.obj	f022f2edf84503dd
+18	183	7651709279059530	lab5.elf	9bf391637a250d0c

@@ -3,7 +3,7 @@
  .thumb
  .fpu softvfp
 
- .global _vectors, _start
+ .global _vectors, _start, _print_ch
 
  .section .vectors
  .align 2
@@ -28,6 +28,21 @@ _start:
  mov sp, r0
 
 _done:
- b main
+    b main
 
- .size _start, . - _start
+    .size _start, . - _start
+
+    .type _print_ch %function
+
+_print_ch:
+    push { r0, r1 } @ save old r0 and r1 values on the stack
+    mov  r1, r0
+    ldr  r0, =#0x03
+    bkpt 0xAB  @ initiate semihosting interface
+
+    pop  { r0, r1 }
+    bx lr
+
+    .size _print_ch, . - _print_ch
+
+    .end
