@@ -14,58 +14,59 @@ LOAD CMakeFiles/lab5.elf.dir/main.c.obj
 LOAD CMakeFiles/lab5.elf.dir/startup.s.obj
                 0x20008000                        _stack_top = (ORIGIN (ram) + LENGTH (ram))
 
-.text           0x08000000      0x1a4
+.text           0x08000000      0x1a0
  *(.vectors)
  .vectors       0x08000000       0xc0 CMakeFiles/lab5.elf.dir/startup.s.obj
                 0x08000000                _vectors
  *(.text)
- .text          0x080000c0       0xc8 CMakeFiles/lab5.elf.dir/main.c.obj
+ .text          0x080000c0       0xc4 CMakeFiles/lab5.elf.dir/main.c.obj
                 0x080000c0                print_ch
-                0x080000dc                main
- .text          0x08000188       0x1c CMakeFiles/lab5.elf.dir/startup.s.obj
-                0x08000188                _start
-                0x0800018e                _print_ch
+                0x080000dc                delay
+                0x08000104                main
+ .text          0x08000184       0x1c CMakeFiles/lab5.elf.dir/startup.s.obj
+                0x08000184                _start
+                0x0800018a                _print_ch
 
-.glue_7         0x080001a4        0x0
- .glue_7        0x080001a4        0x0 linker stubs
+.glue_7         0x080001a0        0x0
+ .glue_7        0x080001a0        0x0 linker stubs
 
-.glue_7t        0x080001a4        0x0
- .glue_7t       0x080001a4        0x0 linker stubs
+.glue_7t        0x080001a0        0x0
+ .glue_7t       0x080001a0        0x0 linker stubs
 
-.vfp11_veneer   0x080001a4        0x0
- .vfp11_veneer  0x080001a4        0x0 linker stubs
+.vfp11_veneer   0x080001a0        0x0
+ .vfp11_veneer  0x080001a0        0x0 linker stubs
 
-.v4_bx          0x080001a4        0x0
- .v4_bx         0x080001a4        0x0 linker stubs
+.v4_bx          0x080001a0        0x0
+ .v4_bx         0x080001a0        0x0 linker stubs
 
-.iplt           0x080001a4        0x0
- .iplt          0x080001a4        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
+.iplt           0x080001a0        0x0
+ .iplt          0x080001a0        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
 
-.rel.dyn        0x080001a4        0x0
- .rel.iplt      0x080001a4        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
+.rel.dyn        0x080001a0        0x0
+ .rel.iplt      0x080001a0        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
 
-.data           0x20000000        0x0 load address 0x080001a4
+.data           0x20000000        0x0 load address 0x080001a0
  *(.data)
  .data          0x20000000        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
  .data          0x20000000        0x0 CMakeFiles/lab5.elf.dir/startup.s.obj
 
-.igot.plt       0x20000000        0x0 load address 0x080001a4
+.igot.plt       0x20000000        0x0 load address 0x080001a0
  .igot.plt      0x20000000        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
 
-.bss            0x20000000        0x0 load address 0x080001a4
+.bss            0x20000000        0x0 load address 0x080001a0
  *(.bss)
  .bss           0x20000000        0x0 CMakeFiles/lab5.elf.dir/main.c.obj
  .bss           0x20000000        0x0 CMakeFiles/lab5.elf.dir/startup.s.obj
 OUTPUT(lab5.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000      0x126
- .debug_info    0x00000000       0xea CMakeFiles/lab5.elf.dir/main.c.obj
- .debug_info    0x000000ea       0x3c CMakeFiles/lab5.elf.dir/startup.s.obj
+.debug_info     0x00000000      0x154
+ .debug_info    0x00000000      0x118 CMakeFiles/lab5.elf.dir/main.c.obj
+ .debug_info    0x00000118       0x3c CMakeFiles/lab5.elf.dir/startup.s.obj
 
-.debug_abbrev   0x00000000       0xd6
- .debug_abbrev  0x00000000       0xae CMakeFiles/lab5.elf.dir/main.c.obj
- .debug_abbrev  0x000000ae       0x28 CMakeFiles/lab5.elf.dir/startup.s.obj
+.debug_abbrev   0x00000000      0x10b
+ .debug_abbrev  0x00000000       0xe3 CMakeFiles/lab5.elf.dir/main.c.obj
+ .debug_abbrev  0x000000e3       0x28 CMakeFiles/lab5.elf.dir/startup.s.obj
 
 .debug_aranges  0x00000000       0x40
  .debug_aranges
@@ -73,14 +74,14 @@ LOAD linker stubs
  .debug_aranges
                 0x00000020       0x20 CMakeFiles/lab5.elf.dir/startup.s.obj
 
-.debug_line     0x00000000      0x129
- .debug_line    0x00000000       0xd2 CMakeFiles/lab5.elf.dir/main.c.obj
- .debug_line    0x000000d2       0x57 CMakeFiles/lab5.elf.dir/startup.s.obj
+.debug_line     0x00000000      0x13c
+ .debug_line    0x00000000       0xe5 CMakeFiles/lab5.elf.dir/main.c.obj
+ .debug_line    0x000000e5       0x57 CMakeFiles/lab5.elf.dir/startup.s.obj
 
-.debug_str      0x00000000      0x217
- .debug_str     0x00000000      0x217 CMakeFiles/lab5.elf.dir/main.c.obj
-                                0x1ed (size before relaxing)
- .debug_str     0x00000217       0xd9 CMakeFiles/lab5.elf.dir/startup.s.obj
+.debug_str      0x00000000      0x21d
+ .debug_str     0x00000000      0x21d CMakeFiles/lab5.elf.dir/main.c.obj
+                                0x1f3 (size before relaxing)
+ .debug_str     0x0000021d       0xd9 CMakeFiles/lab5.elf.dir/startup.s.obj
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 CMakeFiles/lab5.elf.dir/main.c.obj
@@ -93,8 +94,8 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000002c       0x22 CMakeFiles/lab5.elf.dir/startup.s.obj
 
-.debug_frame    0x00000000       0x40
- .debug_frame   0x00000000       0x40 CMakeFiles/lab5.elf.dir/main.c.obj
+.debug_frame    0x00000000       0x58
+ .debug_frame   0x00000000       0x58 CMakeFiles/lab5.elf.dir/main.c.obj
 
 .debug_line_str
                 0x00000000       0xba
